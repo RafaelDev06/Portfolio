@@ -1,0 +1,195 @@
+/* Reset básico */
+body, h1, h2, p, ul, li, textarea, button, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral */
+body {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contêiner principal */
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #444;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+/* Área do chat */
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #222;
+    border-bottom: 1px solid #555;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo das mensagens */
+.message {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+    flex-wrap: wrap; /* Permite que o texto quebre para a linha de baixo se necessário */
+}
+
+.message:hover {
+    background-color: #666;
+}
+
+.message .character {
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px; /* Distância entre o nome do personagem e o texto */
+}
+
+.message .text {
+    color: white;
+    word-wrap: break-word;
+    flex-grow: 1; /* Permite que o texto ocupe o espaço disponível */
+}
+
+.inline-form {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+.inline-form input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: white;
+    font-size: 14px;
+    flex-grow: 1;
+    transition: all 0.3s ease;
+}
+
+.inline-form input[type="text"]:focus {
+    border-color: #007bff;
+    background-color: #555;
+    outline: none;
+}
+
+.inline-form button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.inline-form button:hover {
+    background-color: #0056b3;
+}
+
+.inline-form .delete-button {
+    background-color: #e74c3c;
+}
+
+.inline-form .delete-button:hover {
+    background-color: #c0392b;
+}
+
+/* Formulário de envio de mensagens */
+.chat-input {
+    padding: 15px;
+    background-color: #333;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Dropdown de seleção */
+.chat-input select {
+    flex-shrink: 0;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #444;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.chat-input select:focus {
+    border-color: #007bff;
+    background-color: #555;
+    outline: none;
+}
+
+/* Caixa de texto */
+.chat-input input[type="text"] {
+    flex-grow: 1;
+    height: 40px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #444;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.chat-input input[type="text"]:focus {
+    border-color: #007bff;
+    background-color: #555;
+    outline: none;
+}
+
+/* Botão de envio */
+.chat-input button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+
+/* Scroll bonito */
+.chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}

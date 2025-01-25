@@ -1,0 +1,85 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;  /* Preto de fundo */
+    color: white;  /* Branco para o texto */
+}
+
+/* Seção de Apresentação */
+.intro {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #444; /* Fundo um pouco mais claro que o corpo */
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff; /* Azul */
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #d1d1d1; /* Cinza claro */
+}
+
+/* Seção de Projetos */
+#projetos {
+    padding: 2rem;
+    background-color: #444; /* Fundo mais claro */
+}
+
+#projetos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #007bff; /* Azul */
+    text-align: center;
+}
+
+.projeto-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projeto-item {
+    background-color: #555; /* Fundo mais escuro para os itens */
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.projeto-item:hover {
+    transform: scale(1.05);
+}
+
+.projeto-item h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Azul para título */
+}
+
+.projeto-item p {
+    font-size: 1rem;
+    color: #d1d1d1;
+}
+
+.projeto-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.projeto-item a:hover {
+    text-decoration: underline;
+}

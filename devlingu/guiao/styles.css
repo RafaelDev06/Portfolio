@@ -1,0 +1,51 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;  /* Preto de fundo */
+    color: white;  /* Branco para o texto */
+}
+
+/* Estilo do Main */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Azul para o título */
+    margin-bottom: 20px;
+}
+
+/* Estilo do Conteúdo do Guião */
+#guião {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 100%;
+    margin-top: 20px;
+    color: #f1f1f1; /* Texto branco claro */
+}
+
+/* Estilo para os parágrafos */
+#guião p {
+    margin-bottom: 20px;
+    color: #d1d1d1; /* Cinza claro para os textos */
+}
+
+/* Links dentro do conteúdo */
+#guião a {
+    color: #007bff;  /* Azul para links */
+    text-decoration: none;
+}
+
+#guião a:hover {
+    text-decoration: underline;
+}
